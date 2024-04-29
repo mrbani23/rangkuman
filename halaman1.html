@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman 1</title>
     <style>
@@ -89,6 +92,12 @@
         nav input[type='checkbox'],
         nav label {
             display: none;
+
+        }
+
+        .active {
+            background-color: grey;
+            cursor: unset;
         }
 
         @media (max-width:412px) {
@@ -216,6 +225,7 @@
         <input id='menu' type='checkbox' />
         <!-- The collapsable menu -->
         <ul>
+            <li><a href='index.html'>Homepage</a></li>
             <li><a href='#'>Halaman 1</a></li>
             <li><a href='#'>Halaman 2</a></li>
             <li><a href='#'>Halaman 3</a></li>
@@ -251,12 +261,12 @@
         </div>
     </div> -->
     <div class="halaman">
-        <a href="https://zahraramadhani.free.nf">
+        <a href="index.html">
             <div class="homepage">
                 Homepage
             </div>
         </a>
-        <a href="" id="halaman1">
+        <a href="#" class="active">
             <span>
                 Halaman 1
             </span>
