@@ -125,14 +125,10 @@
                 margin-right: 0;
             }
 
-            /* Because we are in mobile mode, we want to display it as a
-       vertical list */
             nav ul {
                 display: block;
             }
 
-            /* We have two lists: the first one are the always visibile items
-       in the menu bar. The second one is the one that will be hidden */
             nav ul:last-child {
                 width: 100%;
                 flex-basis: 100%;
@@ -164,35 +160,33 @@
 
 <body>
     <nav>
-        <!-- Always visible items in the nav bar -->
-        <!-- <ul>
-            <li>
-                <a href="Homepage">Homepage</a>
-            </li>
-        </ul> -->
+
+        <!-- NAVBAR -->
         <label for='menu' tabindex="0">
             Halaman
         </label>
         <input id='menu' type='checkbox' />
-        <!-- The collapsable menu -->
         <ul>
             <li><a href='https://rabbanydaniswara.github.io/rangkuman'>Homepage</a></li>
-            <li><a href='pertemuan1.html'>Pertemuan 1</a></li>
-            <li><a href='pertemuan2.html'>Pertemuan 2</a></li>
-            <li><a href='pertemuan3.html'>Pertemuan 3</a></li>
+            <li><a href='./pertemuan1'>Pertemuan 1</a></li>
+            <li><a href='./pertemuan2'>Pertemuan 2</a></li>
+            <li><a href='./pertemuan3'>Pertemuan 3</a></li>
             <li><a href='#' class="active">Pertemuan 4</a></li>
-            <li><a href='pertemuan5.html'>Pertemuan 5</a></li>
-            <li><a href='pertemuan6.html'>Pertemuan 6</a></li>
-            <li><a href='pertemuan7.html'>Pertemuan 7</a></li>
-            <li><a href='pertemuan8.html'>Pertemuan 8</a></li>
-            <li><a href='pertemuan9.html'>Pertemuan 9</a></li>
-            <li><a href='pertemuan10.html'>Pertemuan 10</a></li>
-            <li><a href='pertemuan11.html'>Pertemuan 11</a></li>
-            <li><a href='pertemuan12.html'>Pertemuan 12</a></li>
-            <li><a href='pertemuan13.html'>Pertemuan 13</a></li>
-            <li><a href='pertemuan14.html'>Pertemuan 14</a></li>
+            <li><a href='./pertemuan5'>Pertemuan 5</a></li>
+            <li><a href='./pertemuan6'>Pertemuan 6</a></li>
+            <li><a href='./pertemuan7'>Pertemuan 7</a></li>
+            <li><a href='./pertemuan8'>Pertemuan 8</a></li>
+            <li><a href='./pertemuan9'>Pertemuan 9</a></li>
+            <li><a href='./pertemuan10'>Pertemuan 10</a></li>
+            <li><a href='./pertemuan11'>Pertemuan 11</a></li>
+            <li><a href='./pertemuan12'>Pertemuan 12</a></li>
+            <li><a href='./pertemuan13'>Pertemuan 13</a></li>
+            <li><a href='./pertemuan14'>Pertemuan 14</a></li>
         </ul>
     </nav>
+    <!-- AKHIR NAVBAR -->
+
+    <!-- SIDEBAR -->
     <div class="halaman">
         <a href="https://rabbanydaniswara.github.io/rangkuman">
             <div class="homepage">
@@ -270,6 +264,8 @@
             </span>
         </a>
     </div>
+    <!-- SIDEBAR -->
+
     <div class="judul">
         <h1>Rangkuman</h1>
         <div class="rangkuman">
