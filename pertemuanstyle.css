@@ -5,6 +5,10 @@
     font-family: 'poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 p {
     text-indent: 30px;
 }
@@ -71,7 +75,10 @@ a:visited {
 }
 
 #gambar {
+    display: inline;
     width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -93,6 +100,10 @@ nav label {
 .active {
     background-color: grey;
     cursor: unset;
+}
+
+#myBtn {
+    display: none;
 }
 
 @media (max-width:412px) {
@@ -136,6 +147,7 @@ nav label {
         width: 100%;
         text-align: center;
         padding: 0.5em;
+        position: inherit;
     }
 
     input[type='checkbox']:not(:checked)+ul {
@@ -149,6 +161,30 @@ nav label {
         padding: 0.5em;
         line-height: 1.6em;
         align-self: center;
+    }
+
+    #myBtn {
+        display: block;
+        position: fixed;
+        /* Fixed/sticky position */
+        bottom: 20px;
+        /* Place the button at the bottom of the page */
+        right: 30px;
+        /* Place the button 30px from the right */
+        border: none;
+        /* Remove borders */
+        outline: none;
+        /* Remove outline */
+        background-color: grey;
+        /* Set a background color */
+        color: white;
+        /* Text color */
+        padding: 13px;
+        /* Some padding */
+        border-radius: 10px;
+        /* Rounded corners */
+        font-size: 18px;
+        /* Increase font size */
     }
 
 }
