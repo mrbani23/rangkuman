@@ -3,14 +3,14 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
-}
-
-html {
     scroll-behavior: smooth;
 }
 
-p {
-    text-indent: 30px;
+body {
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .halaman {
@@ -41,14 +41,11 @@ a:visited {
     transition: background-color 0.3s;
 }
 
-.judul {
-    padding-top: 100px;
-    padding-bottom: 100px;
+.isi {
+    padding-top: 60px;
+    padding-bottom: 60px;
     color: white;
     text-align: center;
-    background-image: url(images/background.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 .rangkuman h1 {
@@ -64,23 +61,15 @@ a:visited {
     color: black;
     background-color: white;
     margin: auto;
-    width: 60%;
+    width: 45%;
     border: outset;
-    padding: 0px 15px 15px 15px;
+    padding: 0px 60px 15px 60px;
     border-radius: 20px;
 }
 
 .dropdown {
     display: none;
 }
-
-#gambar {
-    display: inline;
-    width: 50%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 
 .homepage {
     background-color: orange;
@@ -105,6 +94,47 @@ nav label {
 #myBtn {
     display: none;
 }
+
+/* Awal pengaturan untuk Text dan Gambar Isi Rangkuman */
+#gambar {
+    display: inline;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#gambarkanan {
+    float: right;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#gambarkiri {
+    float: left;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    text-indent: 30px;
+}
+
+h2 {
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h3{
+    color: rgb(41, 37, 37);
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Akhir pengaturan untuk Text dan Gambar Isi Rangkuman */
 
 @media (max-width:412px) {
 
@@ -140,6 +170,7 @@ nav label {
     nav ul:last-child {
         width: 100%;
         flex-basis: 100%;
+        background-color: white;
     }
 
     nav ul li {
@@ -185,6 +216,10 @@ nav label {
         /* Rounded corners */
         font-size: 18px;
         /* Increase font size */
+    }
+
+    #gambar{
+        width: 100%;
     }
 
 }
