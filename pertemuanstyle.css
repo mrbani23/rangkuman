@@ -76,20 +76,35 @@ a:visited {
     text-align: center;
 }
 
+/* INI NAVBAR */
+
 nav {
     display: none;
+    transition: 0.5s;
 }
 
-nav input[type='checkbox'],
-nav label {
-    display: none;
-
+input[type='checkbox']{
+    appearance: none;
+    -webkit-appearance: none;
 }
+
+label {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
 
 .active {
     background-color: grey;
     cursor: unset;
 }
+
+/* AKHIR NAVBAR */
 
 #myBtn {
     display: none;
@@ -127,7 +142,7 @@ h2 {
     margin-bottom: 15px;
 }
 
-h3{
+h3 {
     color: rgb(41, 37, 37);
     text-align: left;
     margin-top: 15px;
@@ -136,7 +151,7 @@ h3{
 
 /* Akhir pengaturan untuk Text dan Gambar Isi Rangkuman */
 
-@media (max-width:412px) {
+@media screen and (max-width:720px) {
 
     .rangkuman {
         width: 100%;
@@ -153,24 +168,13 @@ h3{
 
     nav {
         display: block;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: 0;
-        margin-right: 0;
     }
 
-    /* Because we are in mobile mode, we want to display it as a
-       vertical list */
-    nav ul {
-        display: block;
-    }
-
-    /* We have two lists: the first one are the always visibile items
-       in the menu bar. The second one is the one that will be hidden */
-    nav ul:last-child {
-        width: 100%;
-        flex-basis: 100%;
+    nav ul{
+        font-size: 1.2em;
+        flex-direction: column;
         background-color: white;
+        width: 100%;
     }
 
     nav ul li {
@@ -178,14 +182,13 @@ h3{
         width: 100%;
         text-align: center;
         padding: 0.5em;
-        position: inherit;
     }
 
-    input[type='checkbox']:not(:checked)+ul {
+    input[type="checkbox"]:not(:checked)~ul {
         display: none;
     }
 
-    nav label {
+    label {
         background-color: green;
         text-align: center;
         display: block;
@@ -218,7 +221,7 @@ h3{
         /* Increase font size */
     }
 
-    #gambar{
+    #gambar {
         width: 100%;
     }
 
