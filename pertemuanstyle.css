@@ -116,6 +116,7 @@ ul{
     width: 50%;
     margin-top: 20px;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 #gambarkanan {
@@ -132,8 +133,17 @@ ul{
     margin-bottom: 20px;
 }
 
-p {
+#paragraf {
     text-indent: 30px;
+}
+
+#point{
+
+}
+
+#list{
+    margin-left: 17px;
+    text-align: justify;
 }
 
 h2 {
@@ -147,6 +157,11 @@ h3 {
     text-align: left;
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+#pertemuan{
+    display: block;
+    height: 75px;
 }
 
 /* Akhir pengaturan untuk Text dan Gambar Isi Rangkuman */
@@ -223,6 +238,7 @@ h3 {
 
     #gambar {
         width: 100%;
+
     }
 
 }
