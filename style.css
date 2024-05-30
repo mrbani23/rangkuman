@@ -65,7 +65,6 @@
   font-weight: 600;
   font-size: 16px;
   margin-top: 15px;
-  moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
@@ -95,7 +94,6 @@
 
 .buttonhover:hover {
   background: rgb(250, 209, 198);
-  moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
