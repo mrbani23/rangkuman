@@ -15,29 +15,38 @@ body {
 
 .halaman {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     color: black;
     padding: 10px;
     position: fixed;
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    left: 16px;
+    left: 30px;
     border: solid;
-    border-color: orange;
+    border-color: purple;
     border-radius: 10px;
+    text-decoration: none;
 }
 
-.halaman span,
 a:link,
 a:visited {
-    padding: 5px;
-    display: block;
+
     color: black;
     text-decoration: none;
 }
 
+.halaman span {
+    padding: 9px;
+    display: block;
+    width: 120px;
+}
+
 .halaman a:hover {
-    background-color: grey;
+    background-color: purple;
     transition: background-color 0.3s;
 }
 
@@ -71,11 +80,6 @@ a:visited {
     display: none;
 }
 
-.homepage {
-    background-color: orange;
-    text-align: center;
-}
-
 /* INI NAVBAR */
 
 nav {
@@ -83,7 +87,7 @@ nav {
     transition: 0.5s;
 }
 
-input[type='checkbox']{
+input[type='checkbox'] {
     appearance: none;
     -webkit-appearance: none;
 }
@@ -93,15 +97,33 @@ label {
     -webkit-appearance: none;
 }
 
-ul{
+ul {
     list-style: none;
     display: flex;
 }
 
+.bullet {
+    list-style: square;
+}
 
-.active {
-    background-color: grey;
+
+.active{
+    color: white;
+    background-color: purple;
     cursor: unset;
+}
+
+.activenav{
+    display: block;
+    width: 1000px;
+    padding: 10px;
+    background-color: purple;
+    border-radius: 10px;
+}
+
+.halaman a .homepage:hover {
+    background-color: purple;
+    transition: background-color 0.4s;
 }
 
 /* AKHIR NAVBAR */
@@ -112,11 +134,13 @@ ul{
 
 /* Awal pengaturan untuk Text dan Gambar Isi Rangkuman */
 #gambar {
-    display: inline;
-    width: 50%;
+    display: block;
+    width: 85%;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #gambarkanan {
@@ -138,8 +162,17 @@ ul{
 }
 
 
-#list{
-    margin-left: 17px;
+#list {
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+#list2 {
+    margin-left: 18px;
+    margin-top: 10px;
+    margin-bottom: 15px;
     text-align: justify;
 }
 
@@ -156,17 +189,24 @@ h3 {
     margin-bottom: 15px;
 }
 
-#pertemuan{
+#pertemuan {
     display: block;
     height: 75px;
 }
 
 /* Akhir pengaturan untuk Text dan Gambar Isi Rangkuman */
 
-@media screen and (max-width:720px) {
+@media screen and (max-width:1200px){
+    .rangkuman {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width:800px) {
 
     .rangkuman {
         width: 100%;
+        padding: 0px 15px 15px 15px;
     }
 
     .isi-rangkuman h1 {
@@ -180,33 +220,90 @@ h3 {
 
     nav {
         display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow-x: hidden;
     }
 
-    nav ul{
-        font-size: 1.2em;
+    nav ul {
         flex-direction: column;
         background-color: white;
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .3s;
+        overflow: hidden;
+        max-height: 200vh;
     }
 
     nav ul li {
-        margin-bottom: 0;
-        width: 100%;
         text-align: center;
         padding: 0.5em;
     }
 
-    input[type="checkbox"]:not(:checked)~ul {
-        display: none;
+    nav ul li a {
+        padding: 10px;
+        display: block;
+        width: 1000px;
     }
 
+    input[type="checkbox"]:not(:checked)~ul {
+        max-height: 0;
+    }
+
+    /* BURGER LIST */
+
+     input[type="checkbox"]:checked ~ label .menu-burger span:nth-child(1) {
+        transform: rotate(-45deg) translate(-10px, 2px);
+        transition: all 0.5s;
+    }
+
+    input[type="checkbox"]:checked ~ label .menu-burger span:nth-child(2) {
+        opacity: 0;
+        visibility: hidden;
+        transform: translate(-10px, 0px);
+        transition: all 0.2s;
+    }
+
+    input[type="checkbox"]:checked ~ label .menu-burger span:nth-child(3) {
+        transform: rotate(45deg) translate(-10px, -2px);
+        transition: all 0.5s;
+    }
+
+    input[type="checkbox"]:not(:checked) ~ label .menu-burger span {
+        transition: all 0.5s;
+    }
+
+    /* BURGER LIST */
+
     label {
-        background-color: green;
+        color: white;
+        background-color: purple;
         text-align: center;
         display: block;
         padding: 0.5em;
         line-height: 1.6em;
         align-self: center;
+        width: 100%;
+    }
+
+    .menu-burger {
+        right: 10px;
+        top: 9px;
+        align-items: center;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-burger span {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 3px 0px;
     }
 
     #myBtn {

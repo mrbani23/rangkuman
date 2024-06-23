@@ -7,26 +7,27 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pertemuan 1</title>
+    <title>Pertemuan 2</title>
     <link rel="stylesheet" href="pertemuanstyle.css">
 </head>
 
 <body>
+
+    <!-- NAVBAR MULAI DARI SINI -->
+
     <nav>
-        <!-- Always visible items in the nav bar -->
-        <!-- <ul>
-            <li>
-                <a href="Homepage">Homepage</a>
-            </li>
-        </ul> -->
+        <input id='menu' type='checkbox' />
         <label id="halaman" for='menu' tabindex="0">
             Halaman
+            <div class="menu-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </label>
-        <input id='menu' type='checkbox' />
-        <!-- The collapsable menu -->
         <ul>
             <li><a href='./'>Homepage</a></li>
-            <li><a href='#' class="active">Pertemuan 1</a></li>
+            <li><a href='./pertemuan1' class="activenav">Pertemuan 1</a></li>
             <li><a href='./pertemuan2'>Pertemuan 2</a></li>
             <li><a href='./pertemuan3'>Pertemuan 3</a></li>
             <li><a href='./pertemuan4'>Pertemuan 4</a></li>
@@ -42,11 +43,17 @@
             <li><a href='./pertemuan14'>Pertemuan 14</a></li>
         </ul>
     </nav>
+
+    <!-- AKHIR DARI NAVBAR DISINI -->
+
+
+    <!-- INI SIDEBAR -->
+
     <div class="halaman">
         <a href="./">
-            <div class="homepage">
-                Homepage
-            </div>
+            <span class="homepage">
+                Profile
+            </span>
         </a>
         <a href="#" class="active">
             <span>
@@ -120,8 +127,11 @@
         </a>
     </div>
 
+    <!-- AKHIR DARI SIDEBAR -->
+
+
     <div class="isi">
-        <h1 id="pertemuan">Pertemuan 1</h1>
+        <h1 id="pertemuan">Pertemuan 2</h1>
         <div class="rangkuman">
             <div class="isi-rangkuman">
                 <h1>
@@ -257,6 +267,7 @@
 
             </div>
         </div>
+    </div>
     </div>
 
     <a href="#halaman" id="myBtn" title="Go to top">
