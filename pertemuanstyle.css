@@ -27,7 +27,7 @@ body {
     transform: translateY(-50%);
     left: 30px;
     border: solid;
-    border-color: purple;
+    border-color: rgb(128, 128, 128);
     border-radius: 10px;
     text-decoration: none;
 }
@@ -46,7 +46,7 @@ a:visited {
 }
 
 .halaman a:hover {
-    background-color: purple;
+    background-color: grey;
     transition: background-color 0.3s;
 }
 
@@ -109,7 +109,7 @@ ul {
 
 .active{
     color: white;
-    background-color: purple;
+    background-color: grey;
     cursor: unset;
 }
 
@@ -117,12 +117,12 @@ ul {
     display: block;
     width: 1000px;
     padding: 10px;
-    background-color: purple;
+    background-color: grey;
     border-radius: 10px;
 }
 
 .halaman a .homepage:hover {
-    background-color: purple;
+    background-color: grey;
     transition: background-color 0.4s;
 }
 
